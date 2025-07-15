@@ -1,7 +1,7 @@
 import error from "@/app/error"
 
 const getFetch = async(url,header={})=>{
-    const res = await fetch(`${process.env.API_URL}${url}`,{
+    const res = await fetch(`next-backend-orpin-two.vercel.app${url}`,{
         cache:"no-store",
         headers:{
             "Content-Type":"application/json",
@@ -22,7 +22,7 @@ const getFetch = async(url,header={})=>{
 }
 
 const postFetch = async (url, body, header = {}) => {
-    const res = await fetch(`${process.env.API_URL}${url}`, {
+    const res = await fetch(`next-backend-orpin-two.vercel.app${url}`, {
         cache: 'no-store',
         method: 'POST',
         headers: {
